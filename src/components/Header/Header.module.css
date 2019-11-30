@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    width: 100%;
+    background-color: #eeeff2;
+    border-bottom: 2px solid #eeeff2;
+    padding: 20px 50px;
+    color: #333f50;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .header .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 20px 20px;
+    }
+
+    .header .logo {
+        width: 100px;
+    }
+}

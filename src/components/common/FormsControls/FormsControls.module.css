@@ -1,0 +1,42 @@
+.formControl input {
+    width: 380px;
+    border-radius: 6px;
+    height: 58px;
+    border: 1px solid #bdcacf;
+    text-indent: 15px;
+    font-size: 16px;
+    transition: all .3s;
+    margin-top: 20px;
+}
+
+.formControl input:focus {
+    border: 1px solid #898A8A;
+}
+
+.formControl.error input
+{
+    border: solid #ff9908 2px;
+}
+
+.formControl.error span
+{
+    color: #ff9908;
+}
+
+.formSummaryError {
+    border: #ff9908 1px solid;
+    padding: 15px;
+    color: #ff9908;
+    margin-top: 20px;
+    border-radius: 6px;
+    min-height: 58px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .formControl input {
+        max-width: 300px;
+        width: 100%;
+        height: 40px;
+    }
+}

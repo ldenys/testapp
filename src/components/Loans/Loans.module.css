@@ -1,0 +1,205 @@
+.loansList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
+.loansList a {
+    text-decoration: none;
+}
+
+.loanCard {
+    position: relative;
+    display: flex;
+    min-height: 120px;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 0 50px 0 rgba(92, 137, 172, .1);
+}
+
+.loanCard span {
+    font-size: 12px;
+    color: #333f50;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.loanCard span.value {
+    font-size: 18px;
+    color: #50b47e;
+    border-bottom: 2px solid #dbe5e8;
+}
+
+.loanCard span.date {
+    text-transform: lowercase;
+}
+
+.loanCard.active span.value {
+    color: #ff9908;
+}
+
+.loanCard p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.loanCard p:last-of-type:not(:first-of-type) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.loanCardContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.colLeft, .colRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.colLeft {
+    max-width: 715px;
+    width: 100%;
+}
+
+.colLeft div {
+    display: flex;
+}
+
+.colRight div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.colRight p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.colRight span {
+    display: flex;
+    align-items: center;
+}
+
+.colRight {
+    position: relative;
+    background: #edf9fe;
+    max-width: 385px;
+    width: 100%;
+}
+
+.colRight:before {
+    background: url(https://dengiclick.kz/sites/all/themes/dclick/images/before-col-right.png) center no-repeat;
+    width: 50px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -48px;
+}
+
+.loanCard.details .colRight {
+    max-width: 300px;
+}
+
+.loanCard.details .colRight p {
+    justify-content: center;
+}
+
+.loanCard.details .colRight:before {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    .loansList {
+        width: 750px;
+    }
+
+    .colRight {
+        max-width: 300px;
+        padding-right: 20px;
+    }
+
+    .colLeft p, .colRight p {
+        margin: 10px 0;
+    }
+
+    .colLeft p:first-of-type {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .colLeft {
+        width: 55%;
+        max-width: none;
+        padding-left: 10%;
+    }
+
+    .colRight {
+        width: 45%;
+        max-width: none;
+    }
+
+    .loanCard.details .colRight {
+        max-width: none;
+    }
+
+    .colLeft div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .loanCardContent {
+        flex-direction: column;
+    }
+
+    .colLeft, .colRight {
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    .colRight:before {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .loansList {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .loanCard span.value {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .colLeft, .colRight {
+        padding: 15px;
+    }
+}
+
+
+
